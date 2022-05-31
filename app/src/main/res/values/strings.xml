@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Conversor de moedas</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Conversor de moeda</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="value_converted">Valor em dólar</string>
+    <string name="button_convert">Converter real em dólar</string>
+    <string name="type_the_quota_of_the_dollar">Digite a cotação do dólar </string>
+    <string name="enter_the_amount_in_reais">Digite o valor em real R$</string>
+
+</resources>
