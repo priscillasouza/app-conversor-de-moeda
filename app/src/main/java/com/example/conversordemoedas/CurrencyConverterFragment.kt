@@ -27,6 +27,17 @@ class CurrencyConverterFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
     }
 
+    private fun convertValue() {
+        binding.apply {
+            val valueReal: BigDecimal = edittextValueReal.text.toString().toBigDecimal()
+            val quoteDolar: BigDecimal = edittextQuoteDolar.text.toString().toBigDecimal()
+            val valueConverted: BigDecimal = valueReal / quoteDolar
+
+            // atribui o valor convertido para a textView que vai apresentar o resultado
+            textviewValueConverted.text = valueConverted.toPlainString()
+        }
+    }
+
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
