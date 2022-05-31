@@ -44,10 +44,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
-            android:textAlignment="center"
             android:text="@string/value_converted"
-            android:textSize="18sp"
-            android:textColor="#083863"/>
+            android:textAlignment="center"
+            android:textColor="@color/purple_700"
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/textview_value_converted"
@@ -67,7 +67,6 @@
             android:layout_marginTop="24dp"
             android:text="@string/button_convert"
             android:textAllCaps="false"
-            android:backgroundTint="#083863"
-            app:cornerRadius="40dp"/>
+            app:cornerRadius="40dp" />
     </androidx.appcompat.widget.LinearLayoutCompat>
 </ScrollView>

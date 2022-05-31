@@ -18,13 +18,21 @@ class CurrencyConverterFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
         _binding = FragmentCurrencyConverterBinding.inflate(inflater, container, false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        listener()
+    }
+
+    private fun listener() {
+        binding.apply {
+            buttonConverter.setOnClickListener {
+                convertValue()
+            }
+        }
     }
 
     private fun convertValue() {
